@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- =========================================================================== 
+	Maven 2 Project configuration file for the FileSystemMonitor project. Version: 
+	$Id: pom.xml 20565 2006-07-17 03:26:28Z AlFa $ =========================================================================== -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- ===================================================================== -->
+	<!-- Project description (including license). -->
+	<!-- ===================================================================== -->
+	<groupId>it.geosolutions.geoserver</groupId>
+	<artifactId>geoserver-stress-test</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>GeoserverStressTest</name>
+	<description>
+        GeoserverStressTest
+	</description>
+	<url>http://www.geo-solutions.it/reports/</url>
+	<scm>
+		<url></url>
+	</scm>
+	<organization>
+		<name>GeoSolutions</name>
+		<url>http://www.geo-solutions.it</url>
+	</organization>
+	<inceptionYear>2012</inceptionYear>
+	
+	  <properties>
+	    <camel.version>2.8.0</camel.version>
+	  </properties>
+	<!-- ==================================================== -->
+	<!-- Dependencies -->
+	<!-- ==================================================== -->
+      
+	<dependencies>
+		<!-- XStream -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.18</version>
+		</dependency>
+            
+		<!-- xbean is required for ActiveMQ broker configuration in the spring 
+			xml file -->
+		<dependency>
+			<groupId>org.apache.xbean</groupId>
+			<artifactId>xbean-spring</artifactId>
+			<version>3.6</version>
+		</dependency>
+		<dependency>
+		  <groupId>commons-io</groupId>
+		  <artifactId>commons-io</artifactId>
+		  <version>2.1</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+    <!-- TODO: the resources stuff hardcodes paths to source + test directories,
+      we should be able to use some properties here -->
+    <resources>
+      <resource>
+        <directory>${basedir}/src/main/resources</directory>
+        <includes>
+          <include>**/*.txt</include>
+          <include>**/*.sql</include>
+          <include>**/*.html</include>
+          <include>**/*.xsd</include>
+          <include>**/*.xsl</include>
+          <include>**/*.xml</include>
+          <include>**/*.utf</include>
+          <include>**/*.prj</include>
+          <include>**/*.py</include>
+          <include>**/*.properties</include>
+          <include>**/*.query</include>
+          <include>**/*.xquery</include>
+          <include>**/*.serialized</include>
+          <include>META-INF/*.jai</include>
+          <include>META-INF/mailcap</include>
+          <include>META-INF/services/**</include>
+          <include>applicationContext.xml</include>
+          <include>**/*.ftl</include>
+          <include>**/placeholder</include>
+          <!-- used for otherwise empty dirs -->
+        </includes>
+        <excludes>
+          <exclude>**/doc-files/**</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>${basedir}/src/test/resources</directory>
+        <includes>
+          <include>META-INF/services/**</include>
+          <include>**/test-data/**</include>
+          <include>**/*.html</include>
+          <include>**/*.xsd</include>
+          <include>**/*.xsl</include>
+          <include>**/*.xml</include>
+          <include>**/*.csv</include>
+          <include>**/*.sld</include>
+          <include>**/*.svg</include>
+          <include>**/*.gml</include>
+          <include>**/*.wkt</include>
+          <include>**/*.txt</include>
+          <include>**/*.sql</include>
+          <include>**/*.png</include>
+          <include>**/*.prj</include>
+          <include>**/*.py</include>
+          <include>**/*.properties</include>
+          <include>**/*.serialized</include>
+          <include>**/*.ftl</include>
+          <include>**/*.tif</include>
+          <include>**/*.tiff</include>
+          <include>**/*.zip</include>
+          <include>**/placeholder</include>
+          <!-- used for otherwise empty dirs -->
+        </includes>
+        <excludes>
+          <exclude>**/doc-files/**</exclude>
+        </excludes>
+      </testResource>
+    </testResources>
+    <plugins>
+      <!-- ======================================================= -->
+      <!--     Compilation.                                        -->
+      <!-- ======================================================= -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.6</source>
+          <!-- The -source argument for the Java compiler. -->
+          <target>1.6</target>
+          <!-- The -target argument for the Java compiler. -->
+          <debug>true</debug>
+          <!-- Whether to include debugging information.   -->
+          <encoding>UTF-8</encoding>
+          <!-- The -encoding argument for the Java compiler. -->
+        </configuration>
+      </plugin>
+    </plugins>  
+    </build>
+</project>
