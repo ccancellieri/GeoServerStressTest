@@ -48,7 +48,7 @@ ${header}
 				<#elseif k=="WCS">
 					<#assign type = "WCS" >
 				<#else>
-					<#assign type = "Group" >	
+					<#assign type = "LayerGroup" >	
 				</#if>
 			</#list>
 ${Layer.Name}${separator}${StressTest.rand(10,weight)?c}${separator}${StressTest.rand(10,height)?c}${separator}${bb}${separator}${minx},${miny},${maxx},${maxy}${separator}${type}
