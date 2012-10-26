@@ -37,7 +37,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -83,8 +83,8 @@
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
               <stringProp name="delimiter">;</stringProp>
               <boolProp name="recycle">true</boolProp>
-              <stringProp name="filename">COMMON-dt_gaul_geom.csv</stringProp>
-              <stringProp name="variableNames">width,height,bbox</stringProp>
+              <stringProp name="filename">GetCapabilities.csv</stringProp>
+              <stringProp name="variableNames">layername,weight,height,crs,bb,type</stringProp>
               <stringProp name="fileEncoding"></stringProp>
               <boolProp name="quotedData">true</boolProp>
               <boolProp name="stopThread">false</boolProp>
@@ -133,7 +133,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -236,7 +236,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -339,7 +339,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -442,7 +442,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -545,7 +545,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -648,7 +648,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -751,7 +751,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -854,7 +854,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -957,7 +957,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1060,7 +1060,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1163,7 +1163,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1266,7 +1266,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1369,7 +1369,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1472,7 +1472,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1575,7 +1575,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1678,7 +1678,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1781,7 +1781,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1884,7 +1884,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -1987,7 +1987,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2090,7 +2090,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2186,7 +2186,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2282,7 +2282,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2378,7 +2378,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2474,7 +2474,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2570,7 +2570,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2666,7 +2666,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2762,7 +2762,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2858,7 +2858,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -2954,7 +2954,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3050,7 +3050,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3146,7 +3146,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3242,7 +3242,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3338,7 +3338,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3521,7 +3521,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3617,7 +3617,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3720,7 +3720,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3823,7 +3823,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -3926,7 +3926,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4029,7 +4029,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4132,7 +4132,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4235,7 +4235,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4338,7 +4338,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4441,7 +4441,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4544,7 +4544,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4647,7 +4647,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4750,7 +4750,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4853,7 +4853,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -4956,7 +4956,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5059,7 +5059,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5162,7 +5162,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5265,7 +5265,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5368,7 +5368,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5471,7 +5471,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5574,7 +5574,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5670,7 +5670,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5766,7 +5766,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5862,7 +5862,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -5958,7 +5958,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6054,7 +6054,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6150,7 +6150,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6246,7 +6246,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6342,7 +6342,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6438,7 +6438,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6534,7 +6534,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6630,7 +6630,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6726,7 +6726,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -6822,7 +6822,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7005,7 +7005,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7101,7 +7101,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7204,7 +7204,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7307,7 +7307,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7410,7 +7410,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7513,7 +7513,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7616,7 +7616,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7719,7 +7719,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7822,7 +7822,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -7925,7 +7925,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8028,7 +8028,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8131,7 +8131,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8234,7 +8234,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8337,7 +8337,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8440,7 +8440,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8543,7 +8543,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8646,7 +8646,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8749,7 +8749,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8852,7 +8852,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -8955,7 +8955,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9058,7 +9058,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9154,7 +9154,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9250,7 +9250,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9346,7 +9346,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9442,7 +9442,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9538,7 +9538,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9634,7 +9634,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9730,7 +9730,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9826,7 +9826,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -9922,7 +9922,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10018,7 +10018,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10114,7 +10114,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10210,7 +10210,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10306,7 +10306,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10489,7 +10489,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10585,7 +10585,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10688,7 +10688,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10791,7 +10791,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10894,7 +10894,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -10997,7 +10997,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11100,7 +11100,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11203,7 +11203,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11306,7 +11306,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11409,7 +11409,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11512,7 +11512,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11615,7 +11615,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11718,7 +11718,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11821,7 +11821,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -11924,7 +11924,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12027,7 +12027,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12130,7 +12130,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12233,7 +12233,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12336,7 +12336,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12439,7 +12439,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12542,7 +12542,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12638,7 +12638,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12734,7 +12734,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12830,7 +12830,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -12926,7 +12926,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13022,7 +13022,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13118,7 +13118,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13214,7 +13214,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13310,7 +13310,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13406,7 +13406,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13502,7 +13502,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13598,7 +13598,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13694,7 +13694,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13790,7 +13790,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -13973,7 +13973,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14069,7 +14069,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14172,7 +14172,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14275,7 +14275,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14378,7 +14378,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14481,7 +14481,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14584,7 +14584,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14687,7 +14687,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14790,7 +14790,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14893,7 +14893,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -14996,7 +14996,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15099,7 +15099,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15202,7 +15202,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15305,7 +15305,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15408,7 +15408,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15511,7 +15511,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15614,7 +15614,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15717,7 +15717,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15820,7 +15820,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -15923,7 +15923,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16026,7 +16026,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16122,7 +16122,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16218,7 +16218,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16314,7 +16314,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16410,7 +16410,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16506,7 +16506,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16602,7 +16602,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16698,7 +16698,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16794,7 +16794,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16890,7 +16890,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -16986,7 +16986,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17082,7 +17082,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17178,7 +17178,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17274,7 +17274,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17457,7 +17457,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17553,7 +17553,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17656,7 +17656,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17759,7 +17759,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17862,7 +17862,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -17965,7 +17965,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18068,7 +18068,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18171,7 +18171,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18274,7 +18274,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18377,7 +18377,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18480,7 +18480,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18583,7 +18583,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18686,7 +18686,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18789,7 +18789,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18892,7 +18892,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -18995,7 +18995,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19098,7 +19098,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19201,7 +19201,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19304,7 +19304,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19407,7 +19407,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19510,7 +19510,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19606,7 +19606,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19702,7 +19702,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19798,7 +19798,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19894,7 +19894,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -19990,7 +19990,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20086,7 +20086,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20182,7 +20182,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20278,7 +20278,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20374,7 +20374,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20470,7 +20470,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20566,7 +20566,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20662,7 +20662,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20758,7 +20758,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -20941,7 +20941,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21037,7 +21037,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21140,7 +21140,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21243,7 +21243,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21346,7 +21346,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21449,7 +21449,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21552,7 +21552,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21655,7 +21655,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21758,7 +21758,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21861,7 +21861,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -21964,7 +21964,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22067,7 +22067,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22170,7 +22170,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22273,7 +22273,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22376,7 +22376,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22479,7 +22479,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22582,7 +22582,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22685,7 +22685,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22788,7 +22788,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22891,7 +22891,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -22994,7 +22994,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23090,7 +23090,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23186,7 +23186,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23282,7 +23282,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23378,7 +23378,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23474,7 +23474,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23570,7 +23570,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23666,7 +23666,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23762,7 +23762,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23858,7 +23858,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -23954,7 +23954,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -24050,7 +24050,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -24146,7 +24146,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">
@@ -24242,7 +24242,7 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">bbox</stringProp>
-                    <stringProp name="Argument.value">${bbox}</stringProp>
+                    <stringProp name="Argument.value">${bb}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                   <elementProp name="height" elementType="HTTPArgument">

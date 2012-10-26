@@ -25,122 +25,376 @@
 		<url>http://www.geo-solutions.it</url>
 	</organization>
 	<inceptionYear>2012</inceptionYear>
-	
-	  <properties>
-	    <camel.version>2.8.0</camel.version>
-	  </properties>
+
+	<properties>
+		<camel.version>2.8.0</camel.version>
+	</properties>
 	<!-- ==================================================== -->
 	<!-- Dependencies -->
 	<!-- ==================================================== -->
-      
+	<repositories>
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+		</repository>
+		<repository>
+			<id>maven1-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/1/</url>
+		</repository>
+		<repository>
+			<id>Osgeo</id>
+			<name>Osgeo geotools</name>
+			<url>http://download.osgeo.org/webdav/geotools//</url>
+		</repository>
+		<repository>
+			<!--Required for bsh 2.0b5 -->
+			<id>JBoss</id>
+			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>maven1-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/1/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>java.net-maven2-repository</id>
+			<url>java-net:/maven2-repository/trunk/repository/</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
-		<!-- XStream -->
+		<dependency>
+			<groupId>org.apache.jmeter</groupId>
+			<artifactId>ApacheJMeter_java</artifactId>
+			<version>2.8</version>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.jmeter</groupId> -->
+		<!-- <artifactId>ApacheJMeter_core</artifactId> -->
+		<!-- <version>2.8</version> -->
+		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
 			<version>2.3.18</version>
 		</dependency>
-            
-		<!-- xbean is required for ActiveMQ broker configuration in the spring 
-			xml file -->
+
 		<dependency>
-			<groupId>org.apache.xbean</groupId>
-			<artifactId>xbean-spring</artifactId>
-			<version>3.6</version>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
 		</dependency>
+
 		<dependency>
-		  <groupId>commons-io</groupId>
-		  <artifactId>commons-io</artifactId>
-		  <version>2.1</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.1</version>
 		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.slf4j</groupId> -->
+		<!-- <artifactId>slf4j-api</artifactId> -->
+		<!-- <version>1.6.6</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>commons-logging</groupId> -->
+		<!-- <artifactId>commons-logging</artifactId> -->
+		<!-- <version>1.1.1</version> -->
+		<!-- <scope>provided</scope> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.slf4j</groupId> -->
+		<!-- <artifactId>jcl-over-slf4j</artifactId> -->
+		<!-- <version>1.6.6</version> -->
+		<!-- </dependency> -->
+
+		<dependency>
+			<!-- https://github.com/afranken/jmeter-analysis-maven-plugin -->
+			<groupId>com.lazerycode.jmeter</groupId>
+			<artifactId>jmeter-analysis-maven-plugin</artifactId>
+			<version>1.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
-	
+
 	<build>
-    <!-- TODO: the resources stuff hardcodes paths to source + test directories,
-      we should be able to use some properties here -->
-    <resources>
-      <resource>
-        <directory>${basedir}/src/main/resources</directory>
-        <includes>
-          <include>**/*.txt</include>
-          <include>**/*.sql</include>
-          <include>**/*.html</include>
-          <include>**/*.xsd</include>
-          <include>**/*.xsl</include>
-          <include>**/*.xml</include>
-          <include>**/*.utf</include>
-          <include>**/*.prj</include>
-          <include>**/*.py</include>
-          <include>**/*.properties</include>
-          <include>**/*.query</include>
-          <include>**/*.xquery</include>
-          <include>**/*.serialized</include>
-          <include>META-INF/*.jai</include>
-          <include>META-INF/mailcap</include>
-          <include>META-INF/services/**</include>
-          <include>applicationContext.xml</include>
-          <include>**/*.ftl</include>
-          <include>**/placeholder</include>
-          <!-- used for otherwise empty dirs -->
-        </includes>
-        <excludes>
-          <exclude>**/doc-files/**</exclude>
-        </excludes>
-      </resource>
-    </resources>
-    <testResources>
-      <testResource>
-        <directory>${basedir}/src/test/resources</directory>
-        <includes>
-          <include>META-INF/services/**</include>
-          <include>**/test-data/**</include>
-          <include>**/*.html</include>
-          <include>**/*.xsd</include>
-          <include>**/*.xsl</include>
-          <include>**/*.xml</include>
-          <include>**/*.csv</include>
-          <include>**/*.sld</include>
-          <include>**/*.svg</include>
-          <include>**/*.gml</include>
-          <include>**/*.wkt</include>
-          <include>**/*.txt</include>
-          <include>**/*.sql</include>
-          <include>**/*.png</include>
-          <include>**/*.prj</include>
-          <include>**/*.py</include>
-          <include>**/*.properties</include>
-          <include>**/*.serialized</include>
-          <include>**/*.ftl</include>
-          <include>**/*.tif</include>
-          <include>**/*.tiff</include>
-          <include>**/*.zip</include>
-          <include>**/placeholder</include>
-          <!-- used for otherwise empty dirs -->
-        </includes>
-        <excludes>
-          <exclude>**/doc-files/**</exclude>
-        </excludes>
-      </testResource>
-    </testResources>
-    <plugins>
-      <!-- ======================================================= -->
-      <!--     Compilation.                                        -->
-      <!-- ======================================================= -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.0.2</version>
-        <configuration>
-          <source>1.6</source>
-          <!-- The -source argument for the Java compiler. -->
-          <target>1.6</target>
-          <!-- The -target argument for the Java compiler. -->
-          <debug>true</debug>
-          <!-- Whether to include debugging information.   -->
-          <encoding>UTF-8</encoding>
-          <!-- The -encoding argument for the Java compiler. -->
-        </configuration>
-      </plugin>
-    </plugins>  
-    </build>
+		<!-- TODO: the resources stuff hardcodes paths to source + test directories, 
+			we should be able to use some properties here -->
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+				<includes>
+					<include>**/*.txt</include>
+					<include>**/*.sql</include>
+					<include>**/*.html</include>
+					<include>**/*.xsd</include>
+					<include>**/*.xsl</include>
+					<include>**/*.xml</include>
+					<include>**/*.utf</include>
+					<include>**/*.prj</include>
+					<include>**/*.py</include>
+					<include>**/*.properties</include>
+					<include>**/*.query</include>
+					<include>**/*.xquery</include>
+					<include>**/*.serialized</include>
+					<include>META-INF/*.jai</include>
+					<include>META-INF/mailcap</include>
+					<include>META-INF/services/**</include>
+					<include>applicationContext.xml</include>
+					<include>**/*.ftl</include>
+					<include>**/placeholder</include>
+					<!-- used for otherwise empty dirs -->
+				</includes>
+				<excludes>
+					<exclude>**/doc-files/**</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>${basedir}/src/test/resources</directory>
+				<includes>
+					<include>META-INF/services/**</include>
+					<include>**/test-data/**</include>
+					<include>**/*.html</include>
+					<include>**/*.xsd</include>
+					<include>**/*.xsl</include>
+					<include>**/*.xml</include>
+					<include>**/*.csv</include>
+					<include>**/*.sld</include>
+					<include>**/*.svg</include>
+					<include>**/*.gml</include>
+					<include>**/*.wkt</include>
+					<include>**/*.txt</include>
+					<include>**/*.sql</include>
+					<include>**/*.png</include>
+					<include>**/*.prj</include>
+					<include>**/*.py</include>
+					<include>**/*.properties</include>
+					<include>**/*.serialized</include>
+					<include>**/*.ftl</include>
+					<include>**/*.tif</include>
+					<include>**/*.tiff</include>
+					<include>**/*.zip</include>
+					<include>**/placeholder</include>
+					<!-- used for otherwise empty dirs -->
+				</includes>
+				<excludes>
+					<exclude>**/doc-files/**</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+		<plugins>
+			<!-- ======================================================= -->
+			<!-- Compilation. -->
+			<!-- ======================================================= -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.6</source>
+					<!-- The -source argument for the Java compiler. -->
+					<target>1.6</target>
+					<!-- The -target argument for the Java compiler. -->
+					<debug>true</debug>
+					<!-- Whether to include debugging information. -->
+					<encoding>UTF-8</encoding>
+					<!-- The -encoding argument for the Java compiler. -->
+
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>integration-test</id>
+			<activation>
+				<property>
+					<name>!skipTests</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<!-- <version>2.4</version> -->
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${project.build.directory}/jmeter/lib/ext/</outputDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>com.lazerycode.jmeter</groupId>
+						<artifactId>jmeter-maven-plugin</artifactId>
+						<version>1.4.1</version>
+						<executions>
+							<execution>
+								<id>jmeter-tests</id>
+								<!-- <phase>integration-test</phase> -->
+								<phase>test</phase>
+								<goals>
+									<goal>jmeter</goal>
+								</goals>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>org.freemarker</groupId>
+								<artifactId>freemarker</artifactId>
+								<version>2.3.18</version>
+								<scope>test</scope>
+							</dependency>
+							<dependency>
+								<groupId>it.geosolutions.geoserver</groupId>
+								<artifactId>geoserver-stress-test</artifactId>
+								<version>1.0</version>
+								<scope>test</scope>
+							</dependency>
+						</dependencies>
+						<configuration>
+							<includes>
+								<!-- <include>src/test/resources/Test.jmx</include> -->
+								<include>Test.jmx</include>
+							</includes>
+							<!-- <reportDir> -->
+							<!-- ${project.build.directory}/jmeter-reports -->
+							<!-- </reportDir> -->
+							<jmeterUserProperties>
+								<hostname>localhost</hostname>
+								<port>8080</port>
+							</jmeterUserProperties>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>xml-maven-plugin</artifactId>
+						<version>1.0-beta-2</version>
+						<executions>
+							<execution>
+								<phase>pre-site</phase>
+								<goals>
+									<goal>transform</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<transformationSets>
+								<transformationSet>
+									<dir>${project.build.directory}/jmeter-reports</dir>
+									<stylesheet>src/test/resources/jmeter-results-detail-report_21.xsl</stylesheet>
+									<outputDir>${project.build.directory}/site/jmeter-results</outputDir>
+									<fileMappers>
+										<fileMapper
+											implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+											<targetExtension>html</targetExtension>
+										</fileMapper>
+									</fileMappers>
+								</transformationSet>
+							</transformationSets>
+						</configuration>
+					</plugin>
+					<!-- <plugin> -->
+					<!-- https://github.com/afranken/jmeter-analysis-maven-plugin -->
+					<!-- <groupId>com.lazerycode.jmeter</groupId> -->
+					<!-- <artifactId>jmeter-analyze-maven-plugin</artifactId> -->
+
+					<!-- <executions> -->
+					<!-- <execution> -->
+					<!-- <goals> -->
+					<!-- <goal>analyze</goal> -->
+					<!-- </goals> -->
+					<!-- <configuration> -->
+					<!-- An AntPath-Style pattern matching a JMeter XML result file to analyze. 
+						Must be a fully qualified path. File may be GZiped, must end in .gz then. -->
+					<!-- <source>${project.build.directory}/**/*.jtl</source> -->
+
+					<!-- directory where to store analysis result files. At least the files 
+						"summary.txt" and "summary.html" will be stored here. -->
+					<!-- <targetDirectory>${project.build.directory}/results</targetDirectory> -->
+
+					<!-- Request groups as a mapping from "group name" to "ant pattern". 
+						A request uri that matches an ant pattern will be associated with the group 
+						name. Request details, charts and CSV files are generated per requestGroup. 
+						If not set, the threadgroup name of the request will be used. -->
+					<!-- <requestGroups> -->
+					<!-- <pages>/page/**</pages> -->
+					<!-- <binaries>/binary/**</binaries> -->
+					<!-- </requestGroups> -->
+
+					<!-- If set to true, additional files "<category>-sizes.csv" and "<category>-durations.csv" 
+						will be stored. These files contain detailed information for response size 
+						and response durations for every URI. -->
+					<!-- <generateCSVs>true</generateCSVs> -->
+
+					<!-- If set to true, additional chart files "<category>-durations.png" 
+						will be created. -->
+					<!-- <generateCharts>true</generateCharts> -->
+
+					<!-- If set to true will process all files found by the pattern defined 
+						in <source>. If set to false (the default) it will only process the first 
+						file found. *SETTING TO TRUE IS NOT RECOMMENDED* It can substantially impact 
+						performance, if you do this you do it at your own risk! -->
+					<!-- <processAllFilesFound>false</processAllFilesFound> -->
+
+					<!-- Template directory where custom freemarker templates are stored. 
+						Freemarker templates are used for all generated output. (CSV files, HTML 
+						files, console output) Templates must be stored in one of the following three 
+						subfolders of the templateDirectory: csv html text The entry template must 
+						be called "main.ftl". For example, templateDirectory/text/main.ftl will be 
+						used for generating the console output. -->
+					<!-- <templateDirectory>${project.basedir}/src/main/resources/</templateDirectory> -->
+
+					<!-- Mapping from resource URL to file name. Every resource will be 
+						downloaded and stored in 'targetDirectory' with the given filename. Tokens 
+						"_FROM_" and "_TO_" can be used as placeholders. These placeholders will 
+						be replaced by timestamps of execution interval (formatted as ISO8601, e.g. 
+						'20111216T145509+0100'). -->
+					<!-- <remoteResources> -->
+					<!-- <property> -->
+					<!-- <name>http://yourhost/path?from=_FROM_&amp;to=_TO_</name> -->
+					<!-- <value>my_resource.txt</value> -->
+					<!-- </property> -->
+					<!-- </remoteResources> -->
+
+					<!-- </configuration> -->
+					<!-- </execution> -->
+					<!-- </executions> -->
+					<!-- </plugin> -->
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

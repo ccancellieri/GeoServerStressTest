@@ -4,10 +4,10 @@
 <#else>
 	<#assign bb_cycle = 1>	
 </#if>
-<#if properties.weight?? >
-	<#assign weight = properties.weight?number >
+<#if properties.width?? >
+	<#assign width = properties.width?number >
 <#else>
-	<#assign weight = 1200 >	
+	<#assign width = 1200 >	
 </#if>
 <#if properties.height?? >
 	<#assign height = properties.height?number >
@@ -27,7 +27,7 @@
 <#if properties.header?? >
 	<#assign header = properties.header >
 <#else>
-	<#assign header = "layername,weight,height,crs,bb,type">	
+	<#assign header = "layername,width,height,crs,bb,type">	
 </#if>
 <#assign WFSCount = 0 >
 <#assign WCSCount = 0 >
@@ -52,9 +52,9 @@ ${header}
 			<@setLayerGroupCount/>	
 		</#if>
 	</#list>
-	<#-- Randomize by weight and height -->
-	<#assign rweight = StressTest.rand(10,weight)?c >
-	<#assign rheight = StressTest.rand(10,height)?c >
+	<#-- Randomize by width and height -->
+	<#assign rwidth = StressTest.rand(10,width) >
+	<#assign rheight = StressTest.rand(10,height) >
 	<#list 1..wh_cycle as j>
 		<#-- Search for bounding box -->
 		<#list Layer.BoundingBox as BB>
@@ -69,7 +69,7 @@ ${header}
 			<#assign miny = StressTest.rand(bb.@miny?number,bb.@maxy?number) >
 			<#assign maxx = StressTest.rand(minx,bb.@maxx?number) >
 			<#assign maxy = StressTest.rand(miny,bb.@maxy?number) >	
-${Layer.Name}${separator}${rweight}${separator}${rheight}${separator}${bbox}${separator}${minx},${miny},${maxx},${maxy}${separator}${type}
+${Layer.Name}${separator}${rwidth?floor}${separator}${rheight?floor}${separator}${bbox}${separator}${minx},${miny},${maxx},${maxy}${separator}${type}
 		</#list>
 	</#list>
 </#list>
