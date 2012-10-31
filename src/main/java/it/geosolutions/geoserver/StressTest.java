@@ -28,6 +28,9 @@ import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;
 import org.apache.jmeter.protocol.java.sampler.JavaSamplerClient;
 import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;
 import org.apache.jmeter.samplers.SampleResult;
+import org.apache.jmeter.services.FileServer;
+import org.apache.log.Logger;
+import org.apache.log.Priority;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -36,12 +39,12 @@ import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
-public class StressTest implements JavaSamplerClient {
+public class StressTest extends AbstractJavaSamplerClient implements JavaSamplerClient {
 
     /**
      * USAGE:<br>
-     * java StressTest [getCapabilities.xml] [getCapabilities.csv] [params.properties] [] [jmeeter.ftl TEMPLATE_DIR] EXAMPLE: java StressTest
-     * src/main/resources/getCapabilities.xml src/main/resources/getCapabilities.csv src/main/resources/params.properties jmeeter.ftl
+     * java StressTest [getCapabilities.xml] [getCapabilities.csv] [params.properties] [] [jmeter.ftl TEMPLATE_DIR] EXAMPLE: java StressTest
+     * src/main/resources/getCapabilities.xml src/main/resources/getCapabilities.csv src/main/resources/params.properties jmeter.ftl
      * src/main/resources/
      * 
      * @param args
@@ -50,43 +53,83 @@ public class StressTest implements JavaSamplerClient {
      * @throws ParserConfigurationException
      * @throws SAXException
      */
-    public static void main(String[] args) throws IOException, TemplateException {
+    public static void main(String[] args) throws IOException, TemplateException,
+            ParserConfigurationException, SAXException {
+        StressTest.run(null,FileServer.getDefaultBase(),args);
+    }
+
+    private static void run(Logger logger, String baseDir, String... args) throws TemplateException, IOException,
+            ParserConfigurationException, SAXException {
 
         File sourceDom;
-        if (args != null && args.length > 0 && args[0] != null)
+        if (args != null && args.length > 0 && args[0] != null) {
             sourceDom = new File(args[0]);
-        else
-            sourceDom = new File("src/main/jmeter/getCapabilities.xml");
+        } else
+            sourceDom = new File(baseDir, "src/test/jmeter/getCapabilities.xml");
+        if (!sourceDom.isAbsolute()){
+            sourceDom=new File(baseDir,sourceDom.getPath());
+        }
+        
+        if (logger!=null && logger.isDebugEnabled())
+            logger.debug("Source dom: " + sourceDom);
 
         File destCSV;
         if (args != null && args.length > 1 && args[1] != null)
             destCSV = new File(args[1]);
         else
-            destCSV = new File("src/main/jmeter/getCapabilities.csv");
+            destCSV = new File(baseDir, "src/test/jmeter/getCapabilities.csv");
+        if (!destCSV.isAbsolute()){
+            destCSV=new File(baseDir,destCSV.getPath());
+        }
+        
+        if (logger!=null && logger.isDebugEnabled())
+            logger.debug("destCSV: " + destCSV);
 
         File properties;
         if (args != null && args.length > 2 && args[2] != null)
             properties = new File(args[2]);
         else
-            properties = new File("src/main/resources/params.properties");
+            properties = new File(baseDir, "src/test/jmeter/params.properties");
+        if (!properties.isAbsolute()){
+            properties=new File(baseDir,properties.getPath());
+        }
+        
+        if (logger!=null && logger.isDebugEnabled())
+            logger.debug("properties: " + properties);
+        
         Properties prop = new Properties();
-        prop.load(new FileReader(properties));
+        FileReader fr = null;
+        try {
+            fr = new FileReader(properties);
+            prop.load(fr);
+        } finally {
+            IOUtils.closeQuietly(fr);
+        }
 
         String templateFileName;
         if (args != null && args.length > 3 && args[3] != null)
             templateFileName = args[3];
         else
-            templateFileName = "jmeeter.ftl";
+            templateFileName = "jmeter.ftl";
+        
+        if (logger!=null && logger.isDebugEnabled())
+            logger.debug("FreeMarker template file name: " + templateFileName);
 
-        File baseDir;
+        File fmBaseDir;
         if (args != null && args.length > 4 && args[4] != null)
-            baseDir = new File(args[4]);
+            fmBaseDir = new File(args[4]);
         else
-            baseDir = new File("src/main/resources/");
+            fmBaseDir = new File(baseDir, "src/test/jmeter/");
+        if (!fmBaseDir.isAbsolute()){
+            fmBaseDir=new File(baseDir,fmBaseDir.getPath());
+        }
+        
+        if (logger!=null && logger.isDebugEnabled())
+            logger.debug("FreeMarker template base dir: " + fmBaseDir);
 
         /* ------------------------------------------------------------------- */
         /* You should do this ONLY ONCE in the whole application life-cycle: */
-        final Template temp = setup(baseDir, templateFileName);
+        Template temp = setup(fmBaseDir, templateFileName);
 
         /* Create a data-model */
         final Map root = new HashMap();
@@ -114,19 +157,12 @@ public class StressTest implements JavaSamplerClient {
             bwriter = new BufferedWriter(writer);
             temp.process(root, bwriter);
 
-            System.out.println("WCS Count: " + stressTest.getWCSCount());
-            System.out.println("WFS Count: " + stressTest.getWFSCount());
-            System.out.println("LayerGroup Count: " + stressTest.getLayerGroupCount());
+            if (logger!=null && logger.isInfoEnabled()) {
+                logger.info("WCS Count: " + stressTest.getWCSCount());
+                logger.info("WFS Count: " + stressTest.getWFSCount());
+                logger.info("LayerGroup Count: " + stressTest.getLayerGroupCount());
+            }
 
-        } catch (SAXException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } finally {
             IOUtils.closeQuietly(bwriter);
             IOUtils.closeQuietly(writer);
@@ -134,7 +170,7 @@ public class StressTest implements JavaSamplerClient {
 
     }
 
-    public static void excapeXMLFile(File path, File out) {
+    public static void excapeXMLFile(File path, File out) throws IOException {
         if (path == null)
             throw new IllegalArgumentException("Input path is not valid");
         if (out == null)
@@ -167,8 +203,6 @@ public class StressTest implements JavaSamplerClient {
                 bw.write(strLine.replaceAll("&", "&amp;"));
             }
             bw.flush();
-        } catch (Exception e) {// Catch exception if any
-            System.err.println("Error: " + e.getMessage());
         } finally {
 
             // Close the input stream
@@ -245,56 +279,65 @@ public class StressTest implements JavaSamplerClient {
     public SampleResult runTest(JavaSamplerContext arg0) {
         SampleResult sampleResult = new SampleResult();
         try {
-            
-            Iterator<String> it=arg0.getParameterNamesIterator();
-            List<String> list=new ArrayList<String>();
-            while (it.hasNext()){
-                list.add(it.next());
-            }
-            
-//           
-            
-            StressTest.main(list.toArray(new String[]{}));
+
+            StressTest.run(getLogger(),baseDir,list.toArray(new String[] {}));
             sampleResult.setSuccessful(true);
             sampleResult.setResponseMessage("ok");
             sampleResult.setResponseCodeOK();
             sampleResult.setResponseMessageOK();
-        } catch (IOException e) {
-            // LOGGER.log(Level.FINER, e.getMessage(), e);
+
+        } catch (Exception e) {
             sampleResult.setSuccessful(false);
             sampleResult.setResponseMessage(e.getLocalizedMessage());
-        } catch (TemplateException e) {
-            // LOGGER.log(Level.FINER, e.getMessage(), e);
-            sampleResult.setSuccessful(false);
-            sampleResult.setResponseMessage(e.getLocalizedMessage());
+            if (getLogger().isErrorEnabled())
+                getLogger().error(e.getLocalizedMessage(), e);
         }
         return sampleResult;
     }
 
     @Override
     public Arguments getDefaultParameters() {
-        Arguments args=new Arguments();
-            args.addArgument("sourceDom","src/main/jmeter/getCapabilities.xml");
-//
-            args.addArgument("destCSV","src/main/jmeter/getCapabilities.csv");
-//
-            args.addArgument("properties","src/main/resources/params.properties");
-//      
-            args.addArgument("templateFileName","jmeeter.ftl");
-//
-            args.addArgument("baseDir","src/main/resources/");
+        Arguments args = new Arguments();
+        args.addArgument("sourceDom", "getCapabilities.xml");
+        //
+        args.addArgument("destCSV", "getCapabilities.csv");
+        //
+        args.addArgument("properties", "params.properties");
+        //
+        args.addArgument("templateFileName", "jmeter.ftl");
+        //
+        args.addArgument("freemarkerBaseDir", "./");
+
         return args;
     }
 
+    private List<String> list;
+
+    private String baseDir;
+
+    private FileServer fileServer;
+
     @Override
     public void setupTest(JavaSamplerContext arg0) {
-        // TODO Auto-generated method stub
-        
+        fileServer = FileServer.getFileServer();
+        baseDir = fileServer.getBaseDir();
+//        JMeterContextService.getContext()
+        if (getLogger().isInfoEnabled())
+            getLogger().info("Context folder: " + baseDir);
+
+        Iterator<String> it = arg0.getParameterNamesIterator();
+        list = new ArrayList<String>();
+        int i = 0;
+        while (it.hasNext()) {
+            String arg = arg0.getParameter(it.next());
+            list.add(arg);
+            if (getLogger().isInfoEnabled())
+                getLogger().info("Adding argument_" + i++ + ": " + arg);
+        }
     }
 
     @Override
     public void teardownTest(JavaSamplerContext arg0) {
-        // TODO Auto-generated method stub
-        
+
     }
 }

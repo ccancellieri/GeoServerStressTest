@@ -11,7 +11,7 @@
 	<groupId>it.geosolutions.geoserver</groupId>
 	<artifactId>geoserver-stress-test</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>GeoserverStressTest</name>
 	<description>
         GeoserverStressTest
@@ -259,12 +259,12 @@
 					<plugin>
 						<groupId>com.lazerycode.jmeter</groupId>
 						<artifactId>jmeter-maven-plugin</artifactId>
-						<version>1.4.1</version>
+						<version>1.6.0</version>
 						<executions>
 							<execution>
 								<id>jmeter-tests</id>
-								<!-- <phase>integration-test</phase> -->
-								<phase>test</phase>
+								<phase>integration-test</phase>
+								<!-- <phase>test</phase> -->
 								<goals>
 									<goal>jmeter</goal>
 								</goals>
@@ -277,25 +277,35 @@
 								<version>2.3.18</version>
 								<scope>test</scope>
 							</dependency>
-							<dependency>
-								<groupId>it.geosolutions.geoserver</groupId>
-								<artifactId>geoserver-stress-test</artifactId>
-								<version>1.0</version>
-								<scope>test</scope>
-							</dependency>
+							<!-- <dependency> -->
+							<!-- <groupId>it.geosolutions.geoserver</groupId> -->
+							<!-- <artifactId>geoserver-stress-test</artifactId> -->
+							<!-- <version>1.0-SNAPSHOT</version> -->
+							<!-- <scope>test</scope> -->
+							<!-- </dependency> -->
 						</dependencies>
 						<configuration>
-							<includes>
-								<!-- <include>src/test/resources/Test.jmx</include> -->
-								<include>Test.jmx</include>
-							</includes>
-							<!-- <reportDir> -->
-							<!-- ${project.build.directory}/jmeter-reports -->
-							<!-- </reportDir> -->
-							<jmeterUserProperties>
-								<hostname>localhost</hostname>
-								<port>8080</port>
-							</jmeterUserProperties>
+							<overrideRootLogLevel>DEBUG</overrideRootLogLevel>
+							<testFilesIncluded>
+								<listItem>Test.jmx</listItem>
+							</testFilesIncluded>
+							<!-- <includes> -->
+							<!-- <include>src/test/resources/Test.jmx</include> -->
+							<!-- <include>jmeter.ftl</include> -->
+							<!-- <include>params.properties</include> -->
+							<!-- </includes> -->
+							<propertiesJMeter>
+								<log_level.jmeter.protocol.java.sampler.AbstractJavaSamplerClient>DEBUG</log_level.jmeter.protocol.java.sampler.AbstractJavaSamplerClient>
+								<log_level.it.geosolutions.geoserver.StressTest>DEBUG</log_level.it.geosolutions.geoserver.StressTest>
+								<jmeterengine.startlistenerslater>false</jmeterengine.startlistenerslater>
+							</propertiesJMeter>
+							<reportDir>
+								${project.build.directory}/jmeter/jmeter-reports
+							</reportDir>
+<!-- 							<jmeterUserProperties> -->
+<!-- 								<hostname>localhost</hostname> -->
+<!-- 								<port>8080</port> -->
+<!-- 							</jmeterUserProperties> -->
 						</configuration>
 					</plugin>
 					<plugin>
@@ -313,8 +323,9 @@
 						<configuration>
 							<transformationSets>
 								<transformationSet>
-									<dir>${project.build.directory}/jmeter-reports</dir>
-									<stylesheet>src/test/resources/jmeter-results-detail-report_21.xsl</stylesheet>
+<!-- 									<dir>${project.build.directory}/jmeter-reports</dir> -->
+									<dir>${project.build.directory}/jmeter/results</dir>
+									<stylesheet>src/test/jmeter/jmeter-results-detail-report_21.xsl</stylesheet>
 									<outputDir>${project.build.directory}/site/jmeter-results</outputDir>
 									<fileMappers>
 										<fileMapper
