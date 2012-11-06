@@ -44,6 +44,11 @@
 			<url>http://download.java.net/maven/1/</url>
 		</repository>
 		<repository>
+			<id>repo1-repository</id>
+			<name>Repository for Maven</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+		<repository>
 			<id>Osgeo</id>
 			<name>Osgeo geotools</name>
 			<url>http://download.osgeo.org/webdav/geotools//</url>
@@ -64,6 +69,11 @@
 			<id>maven1-repository.dev.java.net</id>
 			<name>Java.net Repository for Maven</name>
 			<url>http://download.java.net/maven/1/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>repo1-repository</id>
+			<name>Repository for Maven</name>
+			<url>http://repo1.maven.org/maven2/</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
@@ -302,10 +312,16 @@
 							<reportDir>
 								${project.build.directory}/jmeter/jmeter-reports
 							</reportDir>
-<!-- 							<jmeterUserProperties> -->
-<!-- 								<hostname>localhost</hostname> -->
-<!-- 								<port>8080</port> -->
-<!-- 							</jmeterUserProperties> -->
+							<!-- <jmeterUserProperties> -->
+							<!-- <hostname>localhost</hostname> -->
+							<!-- <port>8080</port> -->
+							<!-- </jmeterUserProperties> -->
+							<propertiesJmeter>
+								<jmeter.target.host>${jmeter.target.host}</jmeter.target.host>
+								<jmeter.target.port>${jmeter.target.port}</jmeter.target.port>
+								<jmeter.thread.number>${jmeter.thread.number}</jmeter.thread.number>
+								<jmeter.loop.count>${jmeter.loop.count}</jmeter.loop.count>
+							</propertiesJmeter>
 						</configuration>
 					</plugin>
 					<plugin>
@@ -323,7 +339,7 @@
 						<configuration>
 							<transformationSets>
 								<transformationSet>
-<!-- 									<dir>${project.build.directory}/jmeter-reports</dir> -->
+									<!-- <dir>${project.build.directory}/jmeter-reports</dir> -->
 									<dir>${project.build.directory}/jmeter/results</dir>
 									<stylesheet>src/test/jmeter/jmeter-results-detail-report_21.xsl</stylesheet>
 									<outputDir>${project.build.directory}/site/jmeter-results</outputDir>
@@ -337,73 +353,75 @@
 							</transformationSets>
 						</configuration>
 					</plugin>
-					<!-- <plugin> -->
-					<!-- https://github.com/afranken/jmeter-analysis-maven-plugin -->
-					<!-- <groupId>com.lazerycode.jmeter</groupId> -->
-					<!-- <artifactId>jmeter-analyze-maven-plugin</artifactId> -->
+					<plugin>
+						<!-- https://github.com/afranken/jmeter-analysis-maven-plugin -->
+						<groupId>com.lazerycode.jmeter</groupId>
+						<artifactId>jmeter-analysis-maven-plugin</artifactId>
+						<version>1.0.1</version>
+						<executions>
+							<execution>
+								<phase>pre-site</phase>
+								<goals>
+									<goal>analyze</goal>
+								</goals>
+								<configuration>
+									<!-- An AntPath-Style pattern matching a JMeter XML result file 
+										to analyze. Must be a fully qualified path. File may be GZiped, must end 
+										in .gz then. -->
+									<source>${project.build.directory}/jmeter/results/*.jtl</source>
 
-					<!-- <executions> -->
-					<!-- <execution> -->
-					<!-- <goals> -->
-					<!-- <goal>analyze</goal> -->
-					<!-- </goals> -->
-					<!-- <configuration> -->
-					<!-- An AntPath-Style pattern matching a JMeter XML result file to analyze. 
-						Must be a fully qualified path. File may be GZiped, must end in .gz then. -->
-					<!-- <source>${project.build.directory}/**/*.jtl</source> -->
+									<!-- directory where to store analysis result files. At least the 
+										files "summary.txt" and "summary.html" will be stored here. -->
+									<targetDirectory>${project.build.directory}/site/jmeter-results</targetDirectory>
 
-					<!-- directory where to store analysis result files. At least the files 
-						"summary.txt" and "summary.html" will be stored here. -->
-					<!-- <targetDirectory>${project.build.directory}/results</targetDirectory> -->
+									<!-- Request groups as a mapping from "group name" to "ant pattern". 
+										A request uri that matches an ant pattern will be associated with the group 
+										name. Request details, charts and CSV files are generated per requestGroup. 
+										If not set, the threadgroup name of the request will be used. -->
+<!-- 									<requestGroups> -->
+<!-- 										<pages>/page/**</pages> -->
+<!-- 										<binaries>/binary/**</binaries> -->
+<!-- 									</requestGroups> -->
 
-					<!-- Request groups as a mapping from "group name" to "ant pattern". 
-						A request uri that matches an ant pattern will be associated with the group 
-						name. Request details, charts and CSV files are generated per requestGroup. 
-						If not set, the threadgroup name of the request will be used. -->
-					<!-- <requestGroups> -->
-					<!-- <pages>/page/**</pages> -->
-					<!-- <binaries>/binary/**</binaries> -->
-					<!-- </requestGroups> -->
+									<!-- If set to true, additional files "<category>-sizes.csv" and 
+										"<category>-durations.csv" will be stored. These files contain detailed information 
+										for response size and response durations for every URI. -->
+									<generateCSVs>true</generateCSVs>
 
-					<!-- If set to true, additional files "<category>-sizes.csv" and "<category>-durations.csv" 
-						will be stored. These files contain detailed information for response size 
-						and response durations for every URI. -->
-					<!-- <generateCSVs>true</generateCSVs> -->
+									<!-- If set to true, additional chart files "<category>-durations.png" 
+										will be created. -->
+									<generateCharts>true</generateCharts>
 
-					<!-- If set to true, additional chart files "<category>-durations.png" 
-						will be created. -->
-					<!-- <generateCharts>true</generateCharts> -->
+									<!-- If set to true will process all files found by the pattern 
+										defined in <source>. If set to false (the default) it will only process the 
+										first file found. *SETTING TO TRUE IS NOT RECOMMENDED* It can substantially 
+										impact performance, if you do this you do it at your own risk! -->
+									<processAllFilesFound>false</processAllFilesFound>
 
-					<!-- If set to true will process all files found by the pattern defined 
-						in <source>. If set to false (the default) it will only process the first 
-						file found. *SETTING TO TRUE IS NOT RECOMMENDED* It can substantially impact 
-						performance, if you do this you do it at your own risk! -->
-					<!-- <processAllFilesFound>false</processAllFilesFound> -->
+									<!-- Template directory where custom freemarker templates are stored. 
+										Freemarker templates are used for all generated output. (CSV files, HTML 
+										files, console output) Templates must be stored in one of the following three 
+										subfolders of the templateDirectory: csv html text The entry template must 
+										be called "main.ftl". For example, templateDirectory/text/main.ftl will be 
+										used for generating the console output. -->
+									<templateDirectory>${project.basedir}/src/test/jmeter/</templateDirectory>
 
-					<!-- Template directory where custom freemarker templates are stored. 
-						Freemarker templates are used for all generated output. (CSV files, HTML 
-						files, console output) Templates must be stored in one of the following three 
-						subfolders of the templateDirectory: csv html text The entry template must 
-						be called "main.ftl". For example, templateDirectory/text/main.ftl will be 
-						used for generating the console output. -->
-					<!-- <templateDirectory>${project.basedir}/src/main/resources/</templateDirectory> -->
+									<!-- Mapping from resource URL to file name. Every resource will 
+										be downloaded and stored in 'targetDirectory' with the given filename. Tokens 
+										"_FROM_" and "_TO_" can be used as placeholders. These placeholders will 
+										be replaced by timestamps of execution interval (formatted as ISO8601, e.g. 
+										'20111216T145509+0100'). -->
+									<!-- <remoteResources> -->
+									<!-- <property> -->
+									<!-- <name>http://yourhost/path?from=_FROM_&amp;to=_TO_</name> -->
+									<!-- <value>my_resource.txt</value> -->
+									<!-- </property> -->
+									<!-- </remoteResources> -->
 
-					<!-- Mapping from resource URL to file name. Every resource will be 
-						downloaded and stored in 'targetDirectory' with the given filename. Tokens 
-						"_FROM_" and "_TO_" can be used as placeholders. These placeholders will 
-						be replaced by timestamps of execution interval (formatted as ISO8601, e.g. 
-						'20111216T145509+0100'). -->
-					<!-- <remoteResources> -->
-					<!-- <property> -->
-					<!-- <name>http://yourhost/path?from=_FROM_&amp;to=_TO_</name> -->
-					<!-- <value>my_resource.txt</value> -->
-					<!-- </property> -->
-					<!-- </remoteResources> -->
-
-					<!-- </configuration> -->
-					<!-- </execution> -->
-					<!-- </executions> -->
-					<!-- </plugin> -->
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
